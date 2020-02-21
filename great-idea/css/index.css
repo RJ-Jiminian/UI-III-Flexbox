@@ -70,84 +70,45 @@ h1, h2, h3, h4, h5 {
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-/* Set every element's box-sizing to border-box */
-* {
-    box-sizing: border-box;
-}
-
-html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
-}
-
-h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
-}
 
 /* Your code starts here! */
 
-header{ 
-	display:inline-block;
-	margin:0 auto;
-	word-spacing:95px;
-	font-size: 18px;
-	font-weight: bold;
+body{
+	border: 1px;
+	padding: 100px;
+	padding-top: 3%;
+	
+}
+
+
+.nav-header{ width: 100%;
+	display: flex;
+	flex-direction: center;
+	justify-content: space-evenly;
+	color:lightgrey;
+	font-size: 18px;	
+	font-weight:bold;
+}
+
+a .services{
+	color:lightgrey;
+}
+
+.section-one {
+	display: flex;
+	justify-content: space-evenly;
+	padding:5px;
 	width:100%;
-	color:lightgray;
-	padding:30px;
-	text-align: center;
+	margin-top: 100px;
+	margin-bottom: 100px;
 
 }
+
 h1{
-	display: inline-block;
-	margin-left:100px;
+	display: flex;
+	justify-content:flex-start;
 	font-size:100px;
+	flex-direction: column;
 	text-align: center;
 	height:300px;
 	width:500px;
@@ -155,38 +116,31 @@ h1{
 }
 
 .title {
-	display: inline-block;
-	height:750%;
-	width:48%;
-	background-color:;
-	margin:100px
+	display:flex;
+	justify-content: center;
+	flex-direction:column;
+	
 }
 
 .Get-started {
+	display: flex;
+	justify-content: space-evenly;
+	margin-left: 125px;
 	font-size: 22px ;
 	height:7%;
 	width:240px;
 	border:2px solid black ;
-	text-align: center;
-	margin-left: 34%;
 	
 }
-
-a{
-	color:grey;
-}
-
-.section-one {
-	display: inline-block;
-	width:100%;
-}
+	
 
 hr{
-	border-top:1px solid black;
+	border-top:2px solid black;
 	width:100%;
 }
 
 .section-two{
+	display:flex;
 	height:150px;
 	margin-top: 50px;
 	
@@ -195,7 +149,6 @@ hr{
 	width:46%;
 	height: 90%;
 	font-size: 20px;
-	display: inline-block;
 	font-weight:bold;
 	text-align:left;
 }
@@ -205,7 +158,6 @@ hr{
 	margin-left:69px;
 	width:48%;
 	height:90%;
-	display: inline-block;
 	font-weight:bold;
 	text-align:left;
 }
@@ -216,75 +168,71 @@ hr{
 }
 
 .section-three{
-	display:inline;
 	width:100%;
-	height:30%;
-	display:inline-block;
+	height:25%;
+	display:flex;
+	justify-content: space-evenly;
+	margin-top:50px;
+	margin-bottom:40px;
 }
 
 .services{
-	margin-top: 50px;;
 	font-size:20px;
 	font-weight:bold;
 	width:425px;
 	height:98%;
 	text-align:left;
-	display:inline-block;
 }
 .product{
 	font-size:20px;
 	font-weight:bold;
 	width:425px;
 	height:98%;
-	margin-left:20px;
+	margin-left:30px;
 	text-align:left;
-	display:inline-block;
 }
 .visions{
 	font-size:20px;
 	font-weight:bold;
 	width:425px;
 	height:98%;
-	margin-left:20px;
+	margin-left:30px;
 	text-align:left;
-	display:inline-block;
 	
 }
 .section-four{
+	display:flex;
+	flex-direction: column;
 	height:180px;
 }
 
 
 .contact{
-	display:inline;
+	display:flex;
+	justify-content: left;
 	line-height: 20px;
 	font-size: 22px;
 	font-weight: bold;
 	width:33%;
-	text-align:left;
-	display:block
 }
 
 .phone-number{
-	
+	display:flex;
 	font-weight: bold;
 	font-size: 22px;
-	display:block;
 	width:33%;
 	line-height:100px;
 }
 .email{
 	font-size:22px;
 	font-weight:bold;
-	width:33%;
+	width:20%;
 	
 }
 
 .copyright{
-	text-align:center;
-}
-
-body{
-	margin:50px;
-	
+	display:flex;
+	justify-content: center;
+	margin-top:20px;
+	font-weight:bold;
 }
